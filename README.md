@@ -24,3 +24,5 @@ User Story #9: My portfolio should have at least one media query.
 User Story #10: The height of the welcome section should be equal to the height of the viewport.
 
 User Story #11: The navbar should always be at the top of the viewport.
+
+Sketch: https://share.balsamiq.com/c/uffjixSeybH6jYe3y2U8Yh.png
