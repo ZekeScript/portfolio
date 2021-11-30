@@ -4,22 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="personal_portfolio.css">
 		<title>Portfolio</title>
 	</head>
 	<body>
-		<!-- User Story #6: My portfolio should have a navbar with an id of navbar. -->
-		<nav class="navbar" id="navbar">
-			<div class="item-nav"><a href="#" id="name">Ezequiel Estigarribia</a></div>
-			<div class="item-nav">
-				<!-- User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page. -->
-				<ul>
-					<li><a href="#" class="nav-link">Home</a></li>
-					<li><a href="#about" class="nav-link">About</a></li>
-					<li><a href="#projects" class="nav-link">Portfolio</a></li>
-					<li><a href="#contact" class="nav-link">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<header>
+			<!-- User Story #6: My portfolio should have a navbar with an id of navbar. -->
+			<nav class="navbar" id="navbar">
+				<div class="item-nav">
+					<a href="#" id="name">Ezequiel<br />Estigarribia</a>
+				</div>
+				<div class="item-nav">
+					<!-- User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page. -->
+					<ul>
+						<li><a href="#" class="nav-link">Home</a></li>
+						<li><a href="#about" class="nav-link">About</a></li>
+						<li><a href="#projects" class="nav-link">Portfolio</a></li>
+						<li><a href="#contact" class="nav-link">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 		<main id="main-doc">
 			<!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section. -->
 			<section class="main-section" id="welcome-section">
@@ -27,10 +33,10 @@
 				<!-- User Story #2: The welcome section should have an h1 element that contains text. -->
 				<div>
 					<p class="right-animation">the portfolio of</p>
-					<h1 class="left-animation">Ezequiel</h1>
-					<h1 class="left-animation">Estigarribia</h1>
-					<p class="down-animation">Hello world,</p>
-					<p class="down-animation">I am a Developer in training</p>
+					<h1 class="left-animation">Ezequiel<br />Estigarribia</h1>
+					<p class="down-animation">
+						Hello world,<br />I am a Developer in training
+					</p>
 				</div>
 				<div class="down-animation">
 					<img
@@ -81,21 +87,15 @@
 				</section>
 			</section>
 			<section class="main-section" id="contact">
-				<h1 class="down-animation">Want to</h1>
-				<h1 class="down-animation">contact me?</h1>
+				<h1 class="down-animation">Want to<br />contact me?</h1>
 				<div class="underline"></div>
 				<p class="left-animation">Please, use the form below</p>
 				<form class="rigth-animation" action="/action_page.php" method="post">
-					<label for="name">Name</label>
-					<br />
-					<input type="text" name="Name" id="" />
-					<br />
-					<label for="email">Email</label>
-					<br />
-					<input type="email" name="email" id="" />
-					<br />
-					<label for="message">Message</label>
-					<br />
+					<label for="name">Name</label><br />
+					<input type="text" name="Name" id="" /><br />
+					<label for="email">Email</label><br />
+					<input type="email" name="email" id="" /><br />
+					<label for="message">Message</label><br />
 					<input type="text" name="message" id="" />
 				</form>
 				<br />
