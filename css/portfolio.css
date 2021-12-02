@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html,
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #150050;
+	color: #c9ccd5;
+	font-size: 1rem;
+}
+
+.navbar {
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	right: 0rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #0f0f0f;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.navbar__wrapper {
+	display: inline-flex;
+	margin: 0.5rem 3.5rem 0.25rem 3.5rem;
+}
+
+.navbar__wrapper li {
+	display: inline;
+	margin: 0rem 0.25rem;
+}
+
+.navbar__wrapper a {
+	color: #dddddd;
+}
+
+main {
+	margin-top: 3rem;
+}
+
+.navbar__wrapper li:hover {
+	animation-name: navbarMenu;
+	border-bottom: 0.01rem solid #0f0f0f;
+	padding-bottom: 0.5rem;
+	animation-duration: 250ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes navbarMenu {
+	100% {
+		padding-bottom: 0.2rem;
+		border-bottom: 0.1rem solid #3bde16;
+	}
+}
+
+.navbar__wrapper #name:hover {
+	animation-name: navbarLogo;
+	animation-duration: 300ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes navbarLogo {
+	100% {
+		color: #3bde16;
+	}
+}
+
+.welcome__image {
+    width: 50vw;
+}
+
+#img__wrapper{
+    position: fixed;
+    top: 10rem;
+    right: 0rem;
+    display: inline-block;
+    border: solid;
+}
