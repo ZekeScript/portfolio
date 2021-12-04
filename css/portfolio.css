@@ -2,13 +2,13 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	text-decoration: none;
+	z-index: 1;
 }
 
 html,
 body {
 	font-family: "Lato", sans-serif;
-	background-color: #150050;
+	background-color: #191A19;
 	color: #c9ccd5;
 	font-size: 1rem;
 }
@@ -18,16 +18,18 @@ body {
 	top: 0rem;
 	left: 0rem;
 	right: 0rem;
+    font-size: 1.3rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #0f0f0f;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+    z-index: 100;
 }
 
-.navbar__wrapper {
-	display: inline-flex;
-	margin: 0.5rem 3.5rem 0.25rem 3.5rem;
+.navbar__wrapper, .navbar__wrapper--logo {
+	display: inline;
+	margin: 0.5rem 6rem 0.1rem 6rem;
 }
 
 .navbar__wrapper li {
@@ -35,51 +37,200 @@ body {
 	margin: 0rem 0.25rem;
 }
 
-.navbar__wrapper a {
-	color: #dddddd;
+.navbar__link {
+	color: #BBBBBB;
+    text-decoration: none;
 }
 
-main {
-	margin-top: 3rem;
-}
-
-.navbar__wrapper li:hover {
+.navbar__link:hover {
 	animation-name: navbarMenu;
 	border-bottom: 0.01rem solid #0f0f0f;
 	padding-bottom: 0.5rem;
-	animation-duration: 250ms;
+	animation-duration: 300ms;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
+    color: #BBBBBB;
 }
 
 @keyframes navbarMenu {
 	100% {
 		padding-bottom: 0.2rem;
-		border-bottom: 0.1rem solid #3bde16;
+		border-bottom: 0.1rem solid #95D600;
+        color: #f0f0f0;
 	}
 }
 
-.navbar__wrapper #name:hover {
+.navbar__logo {
+    color: #95D600;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navbar__logo:hover {
 	animation-name: navbarLogo;
 	animation-duration: 300ms;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
+    color: #95D600;
 }
 
 @keyframes navbarLogo {
 	100% {
-		color: #3bde16;
+		color: #dddddd;
 	}
 }
 
-.welcome__image {
-    width: 50vw;
+
+/* background */
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 45%;
+    }
 }
 
-#img__wrapper{
-    position: fixed;
-    top: 10rem;
-    right: 0rem;
-    display: inline-block;
-    border: solid;
+.welcome__wrapper--background {
+    position: relative;
+    width: 99.1vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #191A19;
+    overflow: hidden;
+    z-index: 0;
 }
+.welcome__background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+/* objets */
+
+.welcome__background li:nth-child(0) {
+    left: 58%;
+    width: 225px;
+    height: 225px;
+    bottom: -225px;
+    animation-delay: 1s;
+}
+.welcome__background li:nth-child(1) {
+    left: 78%;
+    width: 232px;
+    height: 232px;
+    bottom: -232px;
+    animation-delay: 1s;
+}
+.welcome__background li:nth-child(2) {
+    left: 36%;
+    width: 203px;
+    height: 203px;
+    bottom: -203px;
+    animation-delay: 4s;
+}
+.welcome__background li:nth-child(3) {
+    left: 29%;
+    width: 226px;
+    height: 226px;
+    bottom: -226px;
+    animation-delay: 15s;
+}
+.welcome__background li:nth-child(4) {
+    left: 26%;
+    width: 214px;
+    height: 214px;
+    bottom: -214px;
+    animation-delay: 9s;
+}
+.welcome__background li:nth-child(5) {
+    left: 69%;
+    width: 216px;
+    height: 216px;
+    bottom: -216px;
+    animation-delay: 13s;
+}
+.welcome__background li:nth-child(6) {
+    left: 52%;
+    width: 201px;
+    height: 201px;
+    bottom: -201px;
+    animation-delay: 10s;
+}
+.welcome__background li:nth-child(7) {
+    left: 80%;
+    width: 209px;
+    height: 209px;
+    bottom: -209px;
+    animation-delay: 13s;
+}
+.welcome__background li:nth-child(8) {
+    left: 15%;
+    width: 203px;
+    height: 203px;
+    bottom: -203px;
+    animation-delay: 3s;
+}
+.welcome__background li:nth-child(9) {
+    left: 60%;
+    width: 221px;
+    height: 221px;
+    bottom: -221px;
+    animation-delay: 41s;
+}
+
+/* background */
+
+
+.welcome__wrapper {
+    position: absolute;
+    top: 15rem;
+    left: 13.53%;
+}
+
+.welcome__wrapper h1 {
+    font-size: 7rem;
+    color: #95D600;
+}
+
+.welcome__wrapper p {
+    font-size: 1.5rem;
+}
+
+.socialmedia {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+}
+
+.welcome .socialmedia {
+    top: 48rem;
+    left: 90rem;
+}
+
+.socialmedia div {
+    margin: 0rem .4rem;
+}
+
+/*
+Breakpoint 	        Class infix     Dimensions
+X-Small 	            None 	    <576px
+Small 	                sm 	        ≥576px
+Medium 	                md 	        ≥768px
+Large 	                lg 	        ≥992px
+Extra large 	        xl 	        ≥1200px
+Extra extra large 	    xxl 	    ≥1400px
+*/
