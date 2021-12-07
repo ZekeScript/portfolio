@@ -381,10 +381,49 @@ contact section
     display: flex;
     position: relative;
     z-index: 1;
-    height: 75vh;
+    height: 80vh;
     width: 100vw;
-    background: #0054a3 url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png) center right no-repeat;
-    background-attachment: fixed;
+    clip-path: polygon(0% 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+    top: -2.5rem;
+    background: #222831 url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png) center left no-repeat;
+    background-blend-mode:multiply;
+    background-size: 39.96rem;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.contact div {
+    display: inline-flex;
+    flex-direction: column;
+    width: 30rem;
+}
+.contact h1 {
+    font-size: 4rem;
+    display: flex;
+}
+.contact span {
+    margin: 0 1rem 0 0;
+}
+.contact p {
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+}
+.contact__form {
+    display: inline-flex;
+    flex-direction: column;
+}
+form label {
+    font-size: 1.7rem;
+}
+form input {
+    height: 4rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    background-color: #95d600;
+    height: 3rem;
+    width: 6rem;
+    margin-left: 40rem;
 }
 
 
@@ -397,15 +436,14 @@ footer section
 
 
 .footer {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	display: flex;
     position: relative;
     right: 0%;
     left: 0%;
 	justify-content: space-between;
-	align-items: center;
     z-index: 1;
-    padding-bottom: 3rem;
+    padding: 3rem 0rem;
 }
 
 .footer__wrapper {
