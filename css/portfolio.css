@@ -50,7 +50,7 @@ body {
 	animation-duration: 300ms;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
-	color: #bbbbbb;
+	color: #bbbbbbb0;
 }
 
 @keyframes navbarMenu {
@@ -227,16 +227,19 @@ welcome article
 .welcome__name {
 	font-size: 4rem;
 	color: #95d600;
+    transition: 800ms;
 }
 .welcome__description {
     width: 75%;
     font-size: 1.4rem;
+    transition: 1200ms;
 }
 .welcome__wrapper .socialmedia {
 	display: inline-flex;
     justify-content: end;
     margin-top: 13.53rem;
     margin-right: 6.77rem;
+    transition: 400ms;
 }
 .socialmedia div {
 	margin: 0rem 0.3rem;
@@ -273,15 +276,18 @@ about section
 .about h1 {
     margin-bottom: 1.5rem;
 	font-size: 4rem;
+    transition: 400ms;
 }
 span {
     color: #95d600;
 }
 .about h3 {
     margin-bottom: 3rem;
+    transition: 500ms;
 }
 .about p {
     width: 63.21rem;
+    transition: 600ms;
 }
 .portrait__container {
     margin-top: 4rem;
@@ -291,6 +297,7 @@ span {
 	border-radius: 25%;
 	border: solid #95d600;
     overflow: hidden;
+    transition: 800ms;
 }
 .portrait__container img {
 	height: 100%;
@@ -364,10 +371,12 @@ projects section
     margin-top: 8rem;
     margin-bottom: 1.5rem;
 	font-size: 4rem;
+    transition: 400ms;
 }
 .projects p {
     font-size: 1.25rem;
     width: 60rem;
+    transition: 600ms;
 }
 
 
@@ -414,16 +423,48 @@ contact section
 form label {
     font-size: 1.7rem;
 }
-form input {
+form input,textarea {
+    border: none;
+    padding: 1rem;
     height: 4rem;
-    width: 50rem;
+    width: 100%;
     margin-bottom: 2rem;
 }
 .btn {
     background-color: #95d600;
+    margin-top: 1rem;
     height: 3rem;
-    width: 6rem;
+    width: 9rem;
     margin-left: 40rem;
+    transition: 400ms;
+}
+input[type="text"],
+input[type="email"],
+input[type="text"]:not(output):not(:focus),
+input[type="email"]:not(output):not(:focus),
+textarea {
+    border-bottom: 1px solid #f0f0f0;
+    background: transparent;
+    color: #f0f0f0;
+    font-size: 1.8rem;
+    box-shadow: none;
+    outline: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"]:not(output):focus,
+input[type="email"]:not(output):focus,
+textarea:focus {
+  border-bottom: 1px solid #95d600;
+}
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    cursor: pointer;
+    color: #333;
+    background: #f0f0f0;
+}
+::placeholder {
+    color: #f0f0f0;
 }
 
 
@@ -443,7 +484,7 @@ footer section
     left: 0%;
 	justify-content: space-between;
     z-index: 1;
-    padding: 3rem 0rem;
+    padding: 3rem 0rem 1rem;
 }
 
 .footer__wrapper {
