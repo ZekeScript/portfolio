@@ -7,17 +7,12 @@ html,
 body {
 	font-family: "Lato", sans-serif;
 	color: #c9ccd5;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
-
-
-
-
 
 /*
     navbar section
 */
-
 
 .navbar {
 	position: fixed;
@@ -37,12 +32,12 @@ body {
 }
 .navbar__wrapper li {
 	display: inline;
-	margin: 0rem 0.25rem;
+	margin: 0rem 1rem;
 }
 .navbar__link {
 	color: #bbbbbbb0;
 	text-decoration: none;
-    font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 .navbar__link:hover {
 	animation-name: navbarMenu;
@@ -81,15 +76,10 @@ body {
 	}
 }
 
-
-
-
-
 /* 
 welcome section
 background
 */
-
 
 @keyframes animate {
 	0% {
@@ -114,7 +104,7 @@ background
 	padding: 0;
 	background: #202324;
 	overflow: hidden;
-    z-index: -1;
+	z-index: -1;
 }
 .welcome__background li {
 	position: absolute;
@@ -210,286 +200,280 @@ background
 welcome article
 */
 
-
 .welcome {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-    border: solid;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	border: solid;
 }
 .welcome__wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 23.25vh;
-    margin-left: 36.79vw;
+	display: flex;
+	flex-direction: column;
+	margin-top: 23.25vh;
+	margin-left: 36.79vw;
 }
 .welcome__name {
-	font-size: 4rem;
+	font-size: 6rem;
 	color: #95d600;
-    transition: 800ms;
+	transition: 800ms;
 }
 .welcome__description {
-    width: 75%;
-    font-size: 1.4rem;
-    transition: 1200ms;
+	width: 75%;
+	font-size: 1.4rem;
+	transition: 1200ms;
 }
 .welcome__wrapper .socialmedia {
 	display: inline-flex;
-    justify-content: end;
-    margin-top: 13.53rem;
-    margin-right: 6.77rem;
-    transition: 400ms;
+	justify-content: end;
+	margin-top: 13.53rem;
+	margin-right: 6.77rem;
+	transition: 400ms;
 }
 .socialmedia div {
-	margin: 0rem 0.3rem;
+	margin: 0rem 0.4rem;
 }
-.socialmedia div i {
-    width: 24px !important;
-    height: 24px !important;
+a i {
+	color: #bbbbbbb0;
 }
-
-
-
-
+.footer__wrapper--socialmedia a i:hover,
+main a i:hover {
+	color: #95d600;
+	transition: 600ms;
+}
 
 /*
 about section
 */
 
-
 .about {
 	display: flex;
-    position: relative;
-    background: #FEF5ED url(https://raw.githubusercontent.com/estga/furry-journey/main/images/rectangleWhitoutBackgroundDrawing.png) center right/50% no-repeat;
-    background-attachment: fixed;
-    height: 133vh;
-    width: 100vw;
-    clip-path: polygon(0% 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
-    justify-content: center;
-    z-index: 2;
-    color: #333;
-    font-size: 1.4rem;
+	position: relative;
+	background: #fef5ed
+		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/rectangleWhitoutBackgroundDrawing.png)
+		center right/35% no-repeat;
+	background-attachment: fixed;
+	height: 133vh;
+	width: 100vw;
+	clip-path: polygon(0% 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+	justify-content: center;
+	z-index: 2;
+	color: #333;
+	font-size: 1.4rem;
 }
 .about__wrapper {
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
+	margin-top: 8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 1;
 }
-.about__description, .about__work, .about__tech, .about__skills {
-    background-color: #fef5edad;
+.about__description,
+.about__work,
+.about__tech,
+.about__skills {
+	background-color: #fef5edad;
 }
 .about h1 {
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 	font-size: 4rem;
-    transition: 400ms;
+	transition: 400ms;
 }
 span {
-    color: #95d600;
+	color: #95d600;
 }
 .about h3 {
-    margin-bottom: 3rem;
-    transition: 500ms;
+	margin-bottom: 3rem;
+	transition: 500ms;
 }
 .about p {
-    color: #555;
-    width: 63.21rem;
-    transition: 600ms;
+	color: #555;
+	width: 63.21rem;
+	transition: 600ms;
 }
 .about__info {
-    margin-top: 4rem;
-    display: flex;
-    width: 86.47vw;
-    justify-content: space-evenly;
-    align-items: center;
+	margin-top: 4rem;
+	display: flex;
+	width: 86.47vw;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .about__work {
-    width: 31.81vw;
-    display: flex;
-    flex-direction: column;
+	width: 31.81vw;
+	display: flex;
+	flex-direction: column;
 }
 .about__tech {
-    display: flex;
-    flex-direction: column;
-    width: 31.81vw;
-    flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	width: 31.81vw;
+	flex-wrap: wrap;
 }
 .about__skills {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    width: 31.81vw;
-    flex-wrap: wrap;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	width: 31.81vw;
+	flex-wrap: wrap;
 }
 .about__info div h1 {
-    justify-content: center;
-    display: flex;
+	justify-content: center;
+	display: flex;
 }
 .about__info div h1 span {
-    margin-right: 1rem;
+	margin-right: 1rem;
 }
 .about__info div p {
-    width: 100%;
+	width: 100%;
 }
 .about__info ul {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 .about__info ul li {
-    margin: 0 1rem;
-    list-style-type:symbols(cyclic "⚀" "⚁" "⚂" "⚃" "⚄" "⚅");
+	margin: 0 1rem;
 }
-
-
-
-
 
 /*
 projects section
 */
 
-
 .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-	background: #F9F3DF url(https://raw.githubusercontent.com/estga/furry-journey/main/images/geometricPattern.png) center right no-repeat;
-    background-attachment: fixed;
-    z-index: 1;
-    margin-top: -5.27rem;
+	background: #f9f3df
+		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/geometricPattern.png)
+		center right no-repeat;
+	background-attachment: fixed;
+	z-index: 1;
+	margin-top: -5.27rem;
 }
 .projects__title {
-    color: #333;
-    margin-top: 8rem;
-    margin-bottom: 1.5rem;
+	color: #333;
+	margin-top: 8rem;
+	margin-bottom: 1.5rem;
 	font-size: 4rem;
-    transition: 400ms;
+	transition: 400ms;
 }
-.projects a{
-    color: #95d600;
-    text-decoration: none;
+.projects a {
+	color: #95d600;
+	text-decoration: none;
 }
 .projects a:hover {
-    color: #555;
+	color: #555;
 }
 .projects p {
-    color: #555;
-    font-size: 1.25rem;
-    width: 60rem;
-    transition: 600ms;
+	color: #555;
+	font-size: 1.25rem;
+	width: 60rem;
+	transition: 600ms;
 }
-
-
-
-
 
 /*
 contact section
 */
 .contact {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    height: 90vh;
-    width: 100vw;
-    clip-path: polygon(0% 0, 80% 10%, 100% 0, 100% 100%, 20% 90%, 0 100%);
-    top: -5.3rem;
-    background: #222831 url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png) center left no-repeat;
-    background-blend-mode:multiply;
-    background-size: 39.96rem;
-    justify-content:space-evenly;
-    align-items: center;
+	display: flex;
+	position: relative;
+	z-index: 1;
+	height: 90vh;
+	width: 100vw;
+	clip-path: polygon(0% 0, 80% 10%, 100% 0, 100% 100%, 20% 90%, 0 100%);
+	top: -5.3rem;
+	background: #222831
+		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png)
+		center left no-repeat;
+	background-blend-mode: multiply;
+	background-size: 39.96rem;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .contact div {
-    display: inline-flex;
-    flex-direction: column;
-    width: 30rem;
+	display: inline-flex;
+	flex-direction: column;
+	width: 30rem;
 }
 .contact h1 {
-    font-size: 4rem;
-    display: flex;
+	font-size: 4rem;
+	display: flex;
 }
 .contact span {
-    margin: 0 1rem 0 0;
+	margin: 0 1rem 0 0;
 }
 .contact p {
-    margin-top: 1.3rem;
-    font-size: 1.5rem;
+	margin-top: 1.3rem;
+	font-size: 1.5rem;
 }
 .contact__form {
-    display: inline-flex;
-    flex-direction: column;
+	display: inline-flex;
+	flex-direction: column;
 }
 form label {
-    font-size: 1.7rem;
+	font-size: 1.7rem;
 }
-form input,textarea {
-    border: none;
-    padding: 1rem;
-    height: 4rem;
-    width: 100%;
-    margin-bottom: 2rem;
+form input,
+textarea {
+	border: none;
+	padding: 1rem;
+	height: 4rem;
+	width: 100%;
+	margin-bottom: 2rem;
 }
 .btn {
-    background-color: #95d600;
-    margin-top: 1rem;
-    height: 3rem;
-    width: 9rem;
-    margin-left: 40rem;
-    transition: 400ms;
+	font-size: 1.3rem;
+	background-color: #95d600;
+	margin-top: 1rem;
+	height: 3rem;
+	width: 9rem;
+	margin-left: 40rem;
+	transition: 400ms;
 }
 input[type="text"],
 input[type="email"],
 input[type="text"]:not(output):not(:focus),
 input[type="email"]:not(output):not(:focus),
 textarea {
-    border-bottom: 1px solid #f0f0f0;
-    background: transparent;
-    color: #f0f0f0;
-    font-size: 1.8rem;
-    box-shadow: none;
-    outline: none;
+	border-bottom: 1px solid #f0f0f0;
+	background: transparent;
+	color: #f0f0f0;
+	font-size: 1.8rem;
+	box-shadow: none;
+	outline: none;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="text"]:not(output):focus,
 input[type="email"]:not(output):focus,
 textarea:focus {
-  border-bottom: 1px solid #95d600;
+	border-bottom: 1px solid #95d600;
 }
 button[type="submit"]:hover,
 button[type="submit"]:focus {
-    cursor: pointer;
-    color: #333;
-    background: #f0f0f0;
+	cursor: pointer;
+	color: #333;
+	background: #f0f0f0;
 }
 ::placeholder {
-    color: #f0f0f0;
+	color: #f0f0f0;
 }
-
-
-
-
 
 /*
 footer section
 */
 
-
 .footer {
 	font-size: 1.2rem;
 	display: flex;
-    position: relative;
-    right: 0%;
-    left: 0%;
+	position: relative;
+	right: 0%;
+	left: 0%;
 	justify-content: space-between;
-    z-index: 1;
-    padding: 0.5rem 0rem;
+	z-index: 1;
+	padding: 0.5rem 0rem;
 }
 
 .footer__wrapper {
