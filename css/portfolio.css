@@ -261,13 +261,14 @@ about section
 .about {
 	display: flex;
     position: relative;
-    background: #00478a url(https://raw.githubusercontent.com/estga/furry-journey/main/images/geometricPattern.png) center right no-repeat;
+    background: #FEF5ED url(https://raw.githubusercontent.com/estga/furry-journey/main/images/rectangleWhitoutBackgroundDrawing.png) center right/50% no-repeat;
     background-attachment: fixed;
-    height: 175vh;
+    height: 133vh;
     width: 100vw;
     clip-path: polygon(0% 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
     justify-content: center;
     z-index: 2;
+    color: #333;
     font-size: 1.4rem;
 }
 .about__wrapper {
@@ -276,6 +277,9 @@ about section
     flex-direction: column;
     align-items: center;
     z-index: 1;
+}
+.about__description, .about__work, .about__tech, .about__skills {
+    background-color: #fef5edad;
 }
 .about h1 {
     margin-bottom: 1.5rem;
@@ -290,21 +294,9 @@ span {
     transition: 500ms;
 }
 .about p {
+    color: #555;
     width: 63.21rem;
     transition: 600ms;
-}
-.portrait__container {
-    margin-top: 4rem;
-	width: 20rem;
-	height: 20rem;
-	background-color: #d3e0eae5;
-	border-radius: 25%;
-	border: solid #95d600;
-    overflow: hidden;
-    transition: 800ms;
-}
-.portrait__container img {
-	height: 100%;
 }
 .about__info {
     margin-top: 4rem;
@@ -364,20 +356,29 @@ projects section
     flex-direction: column;
     align-items: center;
 	position: relative;
-	height: 200vh;
+	height: 100vh;
 	width: 100vw;
-	background: #0054a3 url(https://raw.githubusercontent.com/estga/furry-journey/main/images/geometricPattern.png) center right no-repeat;
+	background: #F9F3DF url(https://raw.githubusercontent.com/estga/furry-journey/main/images/geometricPattern.png) center right no-repeat;
     background-attachment: fixed;
     z-index: 1;
     margin-top: -5.27rem;
 }
 .projects__title {
+    color: #333;
     margin-top: 8rem;
     margin-bottom: 1.5rem;
 	font-size: 4rem;
     transition: 400ms;
 }
+.projects a{
+    color: #95d600;
+    text-decoration: none;
+}
+.projects a:hover {
+    color: #555;
+}
 .projects p {
+    color: #555;
     font-size: 1.25rem;
     width: 60rem;
     transition: 600ms;
@@ -394,10 +395,10 @@ contact section
     display: flex;
     position: relative;
     z-index: 1;
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     clip-path: polygon(0% 0, 80% 10%, 100% 0, 100% 100%, 20% 90%, 0 100%);
-    top: -4.7rem;
+    top: -5.3rem;
     background: #222831 url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png) center left no-repeat;
     background-blend-mode:multiply;
     background-size: 39.96rem;
@@ -488,16 +489,16 @@ footer section
     left: 0%;
 	justify-content: space-between;
     z-index: 1;
-    padding: 3rem 0rem 1rem;
+    padding: 0.5rem 0rem;
 }
 
 .footer__wrapper {
-	margin: 0.5rem 6rem 0.1rem 6rem;
+	margin: 0.5rem 6rem;
 }
 
 .footer__wrapper--socialmedia {
 	display: inline-flex;
-	margin: 0.5rem 6rem 0.1rem 6rem;
+	margin: 0.5rem 6rem;
 }
 
 .footer__wrapper--socialmedia div {
