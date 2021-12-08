@@ -244,6 +244,10 @@ welcome article
 .socialmedia div {
 	margin: 0rem 0.3rem;
 }
+.socialmedia div i {
+    width: 24px !important;
+    height: 24px !important;
+}
 
 
 
@@ -392,8 +396,8 @@ contact section
     z-index: 1;
     height: 80vh;
     width: 100vw;
-    clip-path: polygon(0% 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
-    top: -2.5rem;
+    clip-path: polygon(0% 0, 80% 10%, 100% 0, 100% 100%, 20% 90%, 0 100%);
+    top: -4.7rem;
     background: #222831 url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png) center left no-repeat;
     background-blend-mode:multiply;
     background-size: 39.96rem;
