@@ -8,12 +8,10 @@
 		<title>Portfolio</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Ubuntu+Mono&display=swap"
 			rel="stylesheet"
 		/>
 		<script
@@ -21,9 +19,9 @@
 			crossorigin="anonymous"
 		></script>
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="../css/portfolio.css" />
@@ -52,7 +50,7 @@
 		</header>
 		<main>
 			<!-- User Story #1: My portfolio should have a welcome section with an id of welcome-section. -->
-			<section class="welcome" id="welcome-section">
+			<section class="welcome">
 				<article class="welcome__wrapper--background">
 					<ul class="welcome__background">
 						<li></li>
@@ -69,13 +67,16 @@
 				</article>
 				<!-- User Story #2: The welcome section should have an h1 element that contains text. -->
 				<article class="welcome__wrapper">
-					<p class="welcome__description right-animation">Hi there, I am</p>
-					<h1 class="welcome__name left-animation">Ezequiel</h1>
-					<p class="welcome__description down-animation">
-						I am an enthusiastic and hardworking programming student.<br />My
-						professionalism and accuracy are proven in numerous assignments
-						and group projects, throughout courses and activities.
-					</p>
+					<div class="presentation">
+						<p class="welcome__description right-animation">Hi there, I am</p>
+						<h1 class="welcome__name left-animation">Ezequiel</h1>
+						<p class="welcome__description down-animation">
+							I am an enthusiastic and hardworking programming student.<br />My
+							professionalism and accuracy are proven in numerous
+							assignments and group projects throughout courses and
+							activities.
+						</p>
+					</div>
 					<div class="socialmedia">
 						<div class="socialmedia__git">
 							<a href="https://github.com/estga" target="_blank"
@@ -106,72 +107,68 @@
 				</article>
 			</section>
 			<section class="about">
-				<article class="about__wrapper">
-					<h1 class="about__title down-animation">
-						Something <span>About</span> Me
-					</h1>
-					<h3>My name is Ezequiel Estigarribia</h3>
-					<p class="about__description left-animation">
-						I am a developer from Argentina.<br />I really
+				<article class="about__wrapper full">
+					<h1 class="about__title">Something<span>About</span>Me</h1>
+					<p>
+						My name is <span>Ezequiel Estigarribia</span>. I am a developer from Argentina.<br />I really
 						<span>enjoy solving problems</span> as well as making things
 						pretty and easy to use. I can't stop learning new things; the
 						more, the better.<br />I also love ride my motorcycle, read books.
 						Oh, and the griller; I have a passion for the griller!
 					</p>
-					<div class="about__info">
-						<div class="about__work">
-							<h1>Profile</h1>
-							<p>
-								I’m currently studying at Northeast National University,
-								Information System career, where I discovered my
-								<span>passion</span> for programming.<br />I worked in
-								some Projects for my web programming course at the
-								University with my team in wich we had to code a web
-								application using HTML, CSS, PHP using the Codeigniter
-								framework, Bootstrap and MYSQL as database service.<br />I’ve
-								been refining my English language for two years now,
-								including live classes with native Americans, who were
-								visiting Argentina for a cultural exchange program.<br />I’m
-								always <span>looking for</span> new knowledge and
-								experiences, and I’m always open to new opportunities
-								<span>to develop</span> myself as a professional and as a
-								person.<br />I hope we can have a live chat about what I
-								could do for you
-							</p>
-						</div>
-						<div>
-							<div class="about__tech">
-								<h1>Tech</h1>
-								<ul>
-									<li>C</li>
-									<li>Java</li>
-									<li>Lisp</li>
-									<li>SQL</li>
-									<li>PHP</li>
-									<li>CSS</li>
-									<li>HTML</li>
-									<li>Bootstrap</li>
-									<li>Linux OS</li>
-									<li>Windows OS</li>
-									<li>Git</li>
-									<li>Aguile Metodology</li>
-									<li>Apache Hbase</li>
-								</ul>
-							</div>
-							<div class="about__skills">
-								<h1>Skills</h1>
-								<ul>
-									<li>Teamwork</li>
-									<li>Problem-Solving</li>
-									<li>Handling Conflict</li>
-									<li>Friendly</li>
-									<li>Curious</li>
-									<li>Persistent</li>
-									<li>Responsibility</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+				</article>
+				<article class="desc">
+					<article class="about__wrapper">
+						<h1 class="about__title">Profile</h1>
+						<p>
+							I’m currently studying at Northeast National University,
+							Information System career, where I discovered my
+							<span>passion</span> for programming.<br />I worked in some
+							Projects for my web programming course at the University with
+							my team in wich we had to code a web application using HTML,
+							CSS, PHP using the Codeigniter framework, Bootstrap and MYSQL
+							as database service.<br />I’ve been refining my English
+							language for two years now, including live classes with native
+							Americans, who were visiting Argentina for a cultural exchange
+							program.<br />I’m always <span>looking for</span> new
+							knowledge and experiences, and I’m always open to new
+							opportunities <span>to develop</span> myself as a professional
+							and as a person.<br />I hope we can have a live chat about
+							what I could do for you
+						</p>
+					</article>
+					<article class="list">
+						<article class="about__wrapper">
+							<h1 class="about__title">Tech</h1>
+							<ul class="about__wrapper--sumary">
+								<li class="about__wrapper--space">C</li>
+								<li class="about__wrapper--space">Java</li>
+								<li class="about__wrapper--space">Lisp</li>
+								<li class="about__wrapper--space">SQL</li>
+								<li class="about__wrapper--space">PHP</li>
+								<li class="about__wrapper--space">CSS</li>
+								<li class="about__wrapper--space">HTML</li>
+								<li class="about__wrapper--space">Bootstrap</li>
+								<li class="about__wrapper--space">Linux OS</li>
+								<li class="about__wrapper--space">Windows OS</li>
+								<li class="about__wrapper--space">Git</li>
+								<li class="about__wrapper--space">Aguile Metodology</li>
+								<li class="about__wrapper--space">Apache Hbase</li>
+							</ul>
+						</article>
+						<article class="about__wrapper">
+							<h1 class="about__title">Skills</h1>
+							<ul class="about__wrapper--sumary">
+								<li class="about__wrapper--space">Teamwork</li>
+								<li class="about__wrapper--space">Problem-Solving</li>
+								<li class="about__wrapper--space">Handling Conflict</li>
+								<li class="about__wrapper--space">Friendly</li>
+								<li class="about__wrapper--space">Curious</li>
+								<li class="about__wrapper--space">Persistent</li>
+								<li class="about__wrapper--space">Responsibility</li>
+							</ul>
+						</article>
+					</article>
 				</article>
 			</section>
 			<!-- User Story #3: My portfolio should have a projects section with an id of projects. -->
@@ -181,8 +178,8 @@
 					Here's a list of most of the projects I've been working on lately. All
 					of these were built during my coding camp adventure on
 					<a href="https://www.freecodecamp.org/">freeCodeCamp</a>, where I've
-					been coding for almost 3 months non-stop until I completed all the
-					projects required to get my Web Design Developer certification.
+					been coding for almost 3 months non-stop<!-- until I completed all the
+					projects required to get my Web Design Developer certification -->.
 				</p>
 				<!-- User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project. -->
 				<article class="projects__wrapper project-tile up-animation">
@@ -270,5 +267,20 @@
 				</div>
 			</section>
 		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>

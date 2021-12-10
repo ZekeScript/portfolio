@@ -11,7 +11,11 @@ body {
 }
 
 /*
+******************************
+******************************
     navbar section
+******************************
+******************************
 */
 
 .navbar {
@@ -21,18 +25,20 @@ body {
 	right: 0rem;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: baseline;
 	background-color: #222831;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
 	z-index: 3;
 }
-.navbar__wrapper,
 .navbar__wrapper--logo {
-	margin: 0rem 5vw;
+	margin: 0 0 0 5vw;
+}
+.navbar__wrapper {
+	margin: 0 5vw 0 0;
 }
 .navbar__wrapper li {
 	display: inline;
-	margin: 0rem 1rem;
+	margin: 0rem 0.3rem;
 }
 .navbar__link {
 	color: #bbbbbbb0;
@@ -41,9 +47,10 @@ body {
 }
 .navbar__link:hover {
 	animation-name: navbarMenu;
-	padding-bottom: 1rem;
+	padding-bottom: 0.8rem;
 	animation-duration: 300ms;
 	animation-fill-mode: forwards;
+	text-decoration: none;
 	animation-timing-function: linear;
 	color: #bbbbbbb0;
 }
@@ -76,9 +83,34 @@ body {
 	}
 }
 
-/* 
-welcome section
-background
+/* Responsive query */
+@media (max-width: 576px) {
+    .navbar {
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .navbar__wrapper--logo {
+	    margin: 0;
+    }
+    .navbar__wrapper {
+	    margin: 0;
+    }
+    .navbar__logo {
+	    font-size: 1.3rem;
+    }
+    .navbar__link {
+    	font-size: 1.2rem;
+    }
+}
+
+/*
+******************************
+******************************
+    welcome section
+    background
+******************************
+******************************
 */
 
 @keyframes animate {
@@ -116,15 +148,10 @@ background
 	animation: animate 19s linear infinite;
 }
 
-/* objets */
+/*
+objets
+*/
 
-.welcome__background li:nth-child(0) {
-	left: 58%;
-	width: 225px;
-	height: 225px;
-	bottom: -225px;
-	animation-delay: 1s;
-}
 .welcome__background li:nth-child(1) {
 	left: 78%;
 	width: 232px;
@@ -195,42 +222,125 @@ background
 	bottom: -221px;
 	animation-delay: 18s;
 }
+/* responsive query */
+@media (max-width: 576px) {
+    .welcome__background li:nth-child(1) {
+    	left: 78%;
+    	width: 58px;
+    	height: 58px;
+    	bottom: -232px;
+    	animation-delay: 1s;
+    }
+    .welcome__background li:nth-child(2) {
+    	left: 36%;
+    	width: 50px;
+    	height: 50px;
+    	bottom: -203px;
+    	animation-delay: 4s;
+    }
+    .welcome__background li:nth-child(3) {
+    	left: 29%;
+    	width: 56px;
+    	height: 56px;
+    	bottom: -226px;
+    	animation-delay: 15s;
+    }
+    .welcome__background li:nth-child(4) {
+    	left: 26%;
+    	width: 53px;
+    	height: 53px;
+    	bottom: -214px;
+    	animation-delay: 9s;
+    }
+    .welcome__background li:nth-child(5) {
+    	left: 69%;
+    	width: 54px;
+    	height: 54px;
+    	bottom: -216px;
+    	animation-delay: 13s;
+    }
+    .welcome__background li:nth-child(6) {
+    	left: 52%;
+    	width: 50px;
+    	height: 50px;
+    	bottom: -201px;
+    	animation-delay: 10s;
+    }
+    .welcome__background li:nth-child(7) {
+    	left: 80%;
+    	width: 52px;
+    	height: 52px;
+    	bottom: -209px;
+    	animation-delay: 13s;
+    }
+    .welcome__background li:nth-child(8) {
+    	left: 15%;
+    	width: 50px;
+    	height: 50px;
+    	bottom: -203px;
+    	animation-delay: 3s;
+    }
+    .welcome__background li:nth-child(9) {
+    	left: 60%;
+    	width: 55px;
+    	height: 55px;
+    	bottom: -221px;
+    	animation-delay: 21s;
+    }
+    .welcome__background li:nth-child(10) {
+    	left: 50%;
+    	width: 55px;
+    	height: 55px;
+    	bottom: -221px;
+    	animation-delay: 18s;
+    }
+}
 
 /*
-welcome article
+******************************
+******************************
+    welcome article
+******************************
+******************************
 */
 
 .welcome {
-	width: 100vw;
-	height: 100vh;
+	padding-top: 20rem;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
 	position: relative;
 	z-index: 1;
-	border: solid;
 }
 .welcome__wrapper {
+	justify-content: right;
 	display: flex;
-	flex-direction: column;
-	margin-top: 23.25vh;
-	margin-left: 36.79vw;
+	flex-wrap: wrap;
+}
+.presentation {
+	max-width: 60%;
+    padding-right: 14rem;
 }
 .welcome__name {
+	font-family: "Ubuntu Mono", monospace;
 	font-size: 6rem;
 	color: #95d600;
 	transition: 800ms;
 }
 .welcome__description {
-	width: 75%;
 	font-size: 1.4rem;
 	transition: 1200ms;
+    padding: 0 3rem 0 0;
 }
-.welcome__wrapper .socialmedia {
+.welcome__wrapper > .socialmedia {
 	display: inline-flex;
-	justify-content: end;
-	margin-top: 13.53rem;
-	margin-right: 6.77rem;
+    position: absolute;
+    bottom: 15%;
+    padding: 6rem;
 	transition: 400ms;
+    align-self: flex-end;
 }
-.socialmedia div {
+.socialmedia > div {
 	margin: 0rem 0.4rem;
 }
 a i {
@@ -242,100 +352,154 @@ main a i:hover {
 	transition: 600ms;
 }
 
+/* responsive query */
+@media (max-width: 576px) {
+    .welcome {
+        padding-top: 20rem;
+    }
+    .presentation {
+    	max-width: 85%;
+        padding-right: 0;
+    }
+    .welcome__description {
+	    font-size: 1rem;
+    }
+    .welcome__name {
+	    font-size: 3rem;
+    }
+    .welcome__wrapper > .socialmedia {
+        bottom: 5%;
+        padding: 2rem;
+    }
+}
+
 /*
-about section
+******************************
+******************************
+    about section
+******************************
+******************************
 */
 
 .about {
-	display: flex;
+	height: 100%;
+	font-size: 1.4rem;
 	position: relative;
+	clip-path: polygon(0% 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+	z-index: 2;
 	background: #fef5ed
 		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/rectangleWhitoutBackgroundDrawing.png)
-		center right/35% no-repeat;
+		center right/40.89rem no-repeat;
 	background-attachment: fixed;
-	height: 133vh;
-	width: 100vw;
-	clip-path: polygon(0% 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
-	justify-content: center;
-	z-index: 2;
-	color: #333;
-	font-size: 1.4rem;
+	padding: 6rem 10rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 .about__wrapper {
-	margin-top: 8rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	z-index: 1;
-}
-.about__description,
-.about__work,
-.about__tech,
-.about__skills {
-	background-color: #fef5edad;
-}
-.about h1 {
-	margin-bottom: 1.5rem;
-	font-size: 4rem;
-	transition: 400ms;
+	margin: 1.5rem;
 }
 span {
+	font-family: "Ubuntu Mono", monospace;
+	display: inline-block;
 	color: #95d600;
 }
-.about h3 {
-	margin-bottom: 3rem;
-	transition: 500ms;
+.about h1 > span {
+	font-size: 3rem;
+	margin: 0 1rem;
 }
-.about p {
+.desc {
+	display: flex;
+	flex-wrap: wrap;
+}
+.desc > .about__wrapper {
+	width: 45%;
+}
+.desc > .list {
+	width: 45%;
+}
+
+.about__title {
+	color: #333;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 1.5rem;
+	font-size: 2.5rem;
+	transition: 400ms;
+}
+.about__wrapper p,
+.about__wrapper ul {
+	background-color: #fef5edad;
 	color: #555;
-	width: 63.21rem;
+	width: 100%;
 	transition: 600ms;
 }
-.about__info {
-	margin-top: 4rem;
-	display: flex;
-	width: 86.47vw;
-	justify-content: space-evenly;
-	align-items: center;
-}
-.about__work {
-	width: 31.81vw;
-	display: flex;
-	flex-direction: column;
-}
-.about__tech {
-	display: flex;
-	flex-direction: column;
-	width: 31.81vw;
+.about__wrapper--sumary {
 	flex-wrap: wrap;
-}
-.about__skills {
-	margin-top: 5rem;
-	display: flex;
-	flex-direction: column;
-	width: 31.81vw;
-	flex-wrap: wrap;
-}
-.about__info div h1 {
-	justify-content: center;
 	display: flex;
 }
-.about__info div h1 span {
-	margin-right: 1rem;
-}
-.about__info div p {
-	width: 100%;
-}
-.about__info ul {
-	display: flex;
-	flex-wrap: wrap;
-}
-.about__info ul li {
+.about__wrapper--space {
 	margin: 0 1rem;
 }
 
+@media only screen and (max-width: 649px) {
+	.about {
+		padding: 10rem 2rem 8rem;
+	}
+}
+@media only screen and (max-width: 949px) {
+	#about {
+		clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+	}
+}
+/* responsive query */
+@media (max-width: 576px) {
+    .about {
+	    font-size: 1rem;
+	    clip-path: polygon(0% 0, 20% 1%, 100% 0, 100% 100%, 80% 99%, 0 100%);
+	    background: #fef5ed
+		    url(https://raw.githubusercontent.com/estga/furry-journey/main/images/rectangleWhitoutBackgroundDrawing.png) center left/34.9rem no-repeat;
+	    background-attachment: fixed;
+	    padding: 3rem 1rem;
+    }
+    .about__wrapper {
+	    margin: 1rem;
+    }
+    .about h1 > span {
+	    font-size: 2.5rem;
+	    margin: 0 1rem;
+    }
+    .desc {
+	    display: inline;
+    }
+    .desc > .about__wrapper {
+	    width: 90%;
+    }
+    .desc > .list {
+	    width: 100%;
+        display: flex;
+    }
+    .list > .about__wrapper {
+        width: 45%;
+    }
+    .about__title {
+	    margin-bottom: 1rem;
+	    font-size: 2rem;
+    }
+}
+/* responsive query */
+@media (max-width: 576px) {
+    
+}
+
+
 /*
-projects section
+******************************
+******************************
+    projects section
+******************************
+******************************
 */
 
 .projects {
@@ -347,7 +511,7 @@ projects section
 	width: 100vw;
 	background: #f9f3df
 		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/geometricPattern.png)
-		center right no-repeat;
+		center center/100vw no-repeat;
 	background-attachment: fixed;
 	z-index: 1;
 	margin-top: -5.27rem;
@@ -374,8 +538,13 @@ projects section
 }
 
 /*
-contact section
+******************************
+******************************
+    contact section
+******************************
+******************************
 */
+
 .contact {
 	display: flex;
 	position: relative;
@@ -385,7 +554,7 @@ contact section
 	clip-path: polygon(0% 0, 80% 10%, 100% 0, 100% 100%, 20% 90%, 0 100%);
 	top: -5.3rem;
 	background: #222831
-		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic.png)
+		url(https://raw.githubusercontent.com/estga/furry-journey/main/images/mailGraphic2.png)
 		center left no-repeat;
 	background-blend-mode: multiply;
 	background-size: 39.96rem;
@@ -462,7 +631,11 @@ button[type="submit"]:focus {
 }
 
 /*
-footer section
+******************************
+******************************
+    footer section
+******************************
+******************************
 */
 
 .footer {
