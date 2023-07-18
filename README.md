@@ -1,11 +1,12 @@
-# README
+# Portfolio
 
-This is a sample README file for a GitHub repository. It provides an overview of the project structure and explains the purpose of each file.
+This repository contains my personal portfolio website. It showcases my work, skills, and projects. The portfolio is built using HTML, CSS, and JavaScript.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Technologies](#technologies)
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -40,9 +41,16 @@ The following technologies were used in this project:
 - Bootstrap (CSS framework)
 - Font Awesome (icon library)
 
+## Features
+
+- Responsive design that works well on desktop and mobile devices.
+- Sections to display information about me, my skills, projects, and contact details.
+- Project gallery with descriptions and links to live demos or repositories.
+- Customizable styles and layout.
+
 ## Installation
 
-To run this project locally, follow these steps:
+To run the portfolio locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/ZekeScript/portfolio.git`
 2. Open the project folder: `cd portfolio`
@@ -50,13 +58,11 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-Feel free to customize this template to create your own portfolio website. You can modify the content in `index.html`, update the styles in `main.css`, and add your projects to the Projects section.
-
-You can also add your own social media links in the footer and update the contact form to fit your needs.
+Feel free to explore the website and use it as a template for your own portfolio. You can customize the content, styles, and layout to suit your needs.
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please create a pull request or open an issue in the GitHub repository.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
