@@ -1,28 +1,63 @@
-# furry-journey
-A Personal Portfolio Webpage
+# README
 
-Objective: Build a CodePen.io app
+This is a sample README file for a GitHub repository. It provides an overview of the project structure and explains the purpose of each file.
 
-User Story #1: My portfolio should have a welcome section with an id of welcome-section.
+## Table of Contents
 
-User Story #2: The welcome section should have an h1 element that contains text.
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-User Story #3: My portfolio should have a projects section with an id of projects.
+## Introduction
 
-User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+This project is a portfolio website built using HTML, CSS, and JavaScript. It showcases the author's personal information, projects, and contact details.
 
-User Story #5: The projects section should contain at least one link to a project.
+The project consists of the following files:
 
-User Story #6: My portfolio should have a navbar with an id of navbar.
+- `index.html`: The main HTML file that defines the structure of the website.
+- `main.css`: The CSS file that contains the styles for the website.
+- `main.js`: The JavaScript file that includes the script for handling dropdown menus.
 
-User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+The website is divided into several sections:
 
-User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+- **Navbar**: The navigation bar at the top of the page with links to different sections of the website.
+- **Welcome Section**: The introductory section with a welcome message and the author's name.
+- **About Section**: A section that provides information about the author's background, skills, and technologies.
+- **Projects Section**: A section that showcases the author's projects.
+- **Contact Section**: A section with a contact form for users to get in touch with the author.
+- **Footer**: The footer section with social media links and copyright information.
 
-User Story #9: My portfolio should have at least one media query.
+## Technologies
 
-User Story #10: The height of the welcome section should be equal to the height of the viewport.
+The following technologies were used in this project:
 
-User Story #11: The navbar should always be at the top of the viewport.
+- HTML
+- CSS
+- JavaScript
+- Bootstrap (CSS framework)
+- Font Awesome (icon library)
 
-Sketch: https://share.balsamiq.com/c/uffjixSeybH6jYe3y2U8Yh.png
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/ZekeScript/portfolio.git`
+2. Open the project folder: `cd portfolio`
+3. Open `index.html` in your web browser.
+
+## Usage
+
+Feel free to customize this template to create your own portfolio website. You can modify the content in `index.html`, update the styles in `main.css`, and add your projects to the Projects section.
+
+You can also add your own social media links in the footer and update the contact form to fit your needs.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create a pull request or open an issue in the GitHub repository.
+
+## License
+
+This project is licensed under the GPL-3.0 license. See the [LICENSE](LICENSE) file for details.
